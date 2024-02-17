@@ -1,4 +1,4 @@
-public class BasicOops {
+public class OopsBasic {
     public static void main(String args[]){
         Pen p1=new Pen();  //copy constructor //object created as a p1
         p1.setcolor("blue");
