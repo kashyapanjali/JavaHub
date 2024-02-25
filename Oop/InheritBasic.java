@@ -2,7 +2,6 @@ public class InheritBasic {
     public static void main(String args[]){
         Fish shark=new Fish();
         shark.eat();
-  
         Dog dobby=new Dog();
         dobby.eat();
         dobby.color="red";
@@ -12,7 +11,6 @@ public class InheritBasic {
         System.out.println(mew.color);
       }      
   }
-  
   //base class/parent class
   class Animal{
       String name;

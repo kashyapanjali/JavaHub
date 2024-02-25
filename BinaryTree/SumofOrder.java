@@ -48,6 +48,8 @@ public class SumofOrder {
 
                 if (currentLevel == k) {
                     levelSum += currNode.data;
+                    //print nth level of nodes
+                     System.out.println(currNode.data);
                 }
 
                 if (currNode.left != null) {
@@ -56,6 +58,7 @@ public class SumofOrder {
                 if (currNode.right != null) {
                     q.add(currNode.right);
                 }
+                
             }
 
             currentLevel++;
@@ -72,7 +75,7 @@ public class SumofOrder {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
 
-        int k = 2; // Replace with the desired level (k)
+        int k =3; // Replace with the desired level (k)
         int levelSum = sumAtKthLevel(root, k);
 
         System.out.println("Sum of nodes at level " + k + ": " + levelSum);
