@@ -11,7 +11,11 @@ public class BasicSet {
         set.add(1);
         set.add(2);
         //print element
+        for(Integer num:set){
+          System.out.println(num);
+        }
         System.out.println(set);
+        System.out.println(set.add(2));
 
         // if(set.contains(2)){
         //     System.out.println("set contains");
@@ -22,12 +26,12 @@ public class BasicSet {
 
         //exist or not
         if(set.contains(2)){
-            System.out.println("set contains");
+            System.out.println("set contains 2");
         }
         System.out.println(set);
 
         if(set.contains(3))//not run
-         System.out.println("set contains");
+        System.out.println("set contains 3");
         
 
         //find size
