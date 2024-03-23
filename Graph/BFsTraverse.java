@@ -43,7 +43,7 @@ public class BFsTraverse {
         graph[6].add(new Edge(6,5,1));
     }
 
-    public static void bfs(ArrayList<Edge>graph[]){
+    public static void bfs(ArrayList<Edge>graph[]){//(V+E)
         Queue<Integer>q=new LinkedList<>();
         boolean vis[]=new boolean[graph.length];
         q.add(0); //src=0
