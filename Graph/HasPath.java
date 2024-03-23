@@ -11,7 +11,7 @@ public class HasPath {
         }
     }
 
-    public static void createGraph(ArrayList<Edge>graph[]){
+    public static void createGraph(ArrayList<Edge>graph[]){//(V+E)
         for(int i=0;i<graph.length;i++){
             graph[i]=new ArrayList<>();
         }
