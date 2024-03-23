@@ -21,8 +21,9 @@ public class Creategraph {
         for(int i=0;i<V;i++){
             graph[i]=new ArrayList<>();
         } 
+        
+        //Graph---O(V+E)
 
-        //graph
 
         /*         4
             0     /
