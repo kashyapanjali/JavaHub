@@ -19,7 +19,6 @@ public class Arrays {
     }
 
     public static void sort(int[][] activities, Comparator<int[]> comparingDouble) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'sort'");
     }
 

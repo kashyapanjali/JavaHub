@@ -15,6 +15,7 @@ public class ItineraryTickets {
         }
         return null;
     }
+    
     public static void main(String args[]){ //O(n)
         HashMap<String,String>tickets=new HashMap<>();
         tickets.put("Chennai","Bengaluru");
@@ -25,7 +26,7 @@ public class ItineraryTickets {
         String start=getStart(tickets);
         System.out.print(start);
 
-        for(String key:tickets.keySet()){ //O(n)
+        for(@SuppressWarnings("unused") String key:tickets.keySet()){ //O(n)
 
           System.out.print(" -> "+tickets.get(start));
           start=tickets.get(start);
