@@ -19,6 +19,7 @@ public class minmax {
         }
         System.out.println(min);
         System.out.println(max);
+        System.out.println(min+max);
         sc.close();
     }
 }

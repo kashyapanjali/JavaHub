@@ -12,38 +12,46 @@ public class checkpairs {
             }
             System.out.println();
         }
-        System.out.println(tp);
+        // total subarray print
+        System.out.println("total subarray is:"+tp);
         System.out.println();
     }
 
     public static void printsubarray(int arr[]){
-        //int ts=0;
-        int sum=0;
+
         int largest=Integer.MIN_VALUE;
+        int smallest=Integer.MAX_VALUE;
+
         for(int i=0;i<arr.length;i++){
-            int start=i;
             for(int j=i;j<arr.length;j++){
-                int end=j;
-                sum=0;
-                for(int k=start;k<=end;k++)//subarray
+
+               int sum=0;
+
+                for(int k=i;k<=j;k++)//subarray
                 {
-                    System.out.print(arr[k]);
-
+                    System.out.print(arr[k]+" "); //subarray print
                    
-                    sum=sum+arr[k];
-                  //  ts++;
+                     sum=sum+arr[k];//sum of subarray
                 }
-                if(largest<sum){
-                    largest=sum;
-                }
-                System.out.println(sum);
-            }
-        }//System.out.println("total number of subarray is"+ts);
-        System.out.print("largest subarray sum is:"+largest);
-    }
-    
-    //kadane's Algorithm
+                System.out.println(":sum of subarray is:"+sum);
 
+                //find smallest and largest sum
+                if(largest<sum){
+                  largest=sum;
+                }
+                if(smallest>sum){
+                    smallest=sum;
+                }
+            
+            }
+            System.out.println();
+        }
+        System.out.println("largest subarray sum is:"+largest);
+        System.out.print("smallest subarray sum is:"+smallest);
+
+    }
+
+    //kadane's Algorithm
     public static void kadanes(int arr[]){
         int ms=Integer.MIN_VALUE;
         int cs=0;
@@ -56,12 +64,16 @@ public class checkpairs {
         }
         System.out.println("\nMaximum subarray sum is:"+ms);
     }
+
     public static void main(String args[]){
         int numbers[]={2,-3,6,-8,5,3};
+
         // print pairs of arrays
         pairs(numbers);
-        //print subarrays
+
+        //print subarrays->sum,minsum,maxsum
         printsubarray(numbers);
+
         kadanes(numbers);
     }
     
