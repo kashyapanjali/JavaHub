@@ -67,7 +67,7 @@ public class HouseRobTwo{
       
     public static void main(String args[]){ 
         HouseRobTwo houseRobber = new HouseRobTwo(); // Create an instance of HouseRobTwo
-        int nums[] = {1, 2, 3, 1};
+        int nums[] = {1, 2, 3, 1,7,8};
         System.out.println(houseRobber.rob1(nums));// Call rob method using the instance
         System.out.println(houseRobber.rob2(nums)); 
         System.out.println(houseRobber.rob3(nums));
