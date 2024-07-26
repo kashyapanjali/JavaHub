@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class BasicSet {
+    
     public static void main(String args[]){
         HashSet<Integer>set=new HashSet<>();//basic set
 

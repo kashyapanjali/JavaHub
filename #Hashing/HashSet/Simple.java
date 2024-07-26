@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Simple {
 	
+	
     public static void main(String[] args) 
 	{ 
 		// Instantiate an object of HashSet 
