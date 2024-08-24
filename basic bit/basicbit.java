@@ -17,7 +17,8 @@ public class basicbit {
     //left shift
     System.out.println(a<<b);
     //right shift
-    System.out.println(a>>b);
+    float d = (a>>b);
+    System.out.println(d);
     sc.close();
          }
     }
