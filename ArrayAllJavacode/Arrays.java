@@ -32,4 +32,9 @@ public class Arrays {
         throw new UnsupportedOperationException("Unimplemented method 'fill'");
     }
 
+    public static void sort(int[] coin) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+    }
+
 }
